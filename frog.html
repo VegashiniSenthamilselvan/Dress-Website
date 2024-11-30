@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: "Ga Maamli", sans-serif;
+            font-size: 24px;
+            margin: 0;
+            text-align: justify;
+           
+        }
+
+        .dress p {
+            margin: 0;
+            font-size: 90px;
+            text-align:right;
+        }
+        .dress
+        {
+            margin-right: 500px;
+        }
+
+        .photo {
+          
+            display: flex;
+            justify-content: center;
+            margin-top: -400px; 
+            margin-left: 990px; 
+        }
+
+        .bt {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+        }
+
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+           
+        }
+
+        button a img {
+            height: 600px;
+            width: 400px;
+            
+        }
+
+        header {
+            background: white;
+            color: black;
+            padding: 10px 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            font-size: 24px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            transition: color 0.3s;
+            font-size: 24px;
+        }
+
+        nav ul li a:hover {
+            color: antiquewhite;
+        }
+
+        .login {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            z-index: 1000;
+            border: 2px solid black;
+            width: 250px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .login label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .login .user {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .login button {
+            width: 100%;
+            padding: 10px;
+            background-color:antiquewhite;
+            color:black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        hr 
+        {
+            border: 10px solid black; 
+            margin: 20px 0;
+        }
+        
+        .product
+        {
+                width: 270px;
+                height: 400px;
+                padding: 100px;
+                margin-right: 50%; 
+                border: none;
+                cursor: pointer;
+                overflow: hidden; 
+                position: relative; 
+                align-items: center;
+                justify-items: auto;
+        }
+
+        .product img
+        {
+                width: 100%;
+                height: auto;
+                width: 260px;
+                height: 400px;
+                transition: transform 0.3s ease; 
+                
+        }
+
+        .product:hover img 
+        {
+                transform: scale(1.2);     
+        }
+
+        .product 
+        {
+                display: block;
+                width: 100%;
+                height: 100%;
+        }
+        .text p
+        {
+            padding: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: oblique;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <p style="font-size: 24px;font-family: 'Ga Maamli', sans-serif;" >Shini website</p>
+            </ul>
+        </nav>
+        <button id="signInBtn" style="font-size: 24px;font-family: 'Ga Maamli', sans-serif;"><b>Sign In</b></button>
+        <div class="login" id="loginBox">
+            <form action="http://127.0.0.1:5500/html/receipe.html" method="post">
+                <label for="username">Username:</label>
+                <input class="user" type="text" id="username" name="Username" required><br><br>
+                <label for="password">Password:</label>
+                <input class="user" type="password" id="password" name="Password" required><br><br>
+                <button type="submit">LOGIN</button>
+            </form>
+        </div>
+    </header>
+    <div calss="container">
+        <div class="dress">
+
+            <p style="font-style: 'Ga Maamli', sans-serif; font-size: 90px; text-align: center;">&nbsp;&nbsp;&nbsp;SwiftCart</p>
+            <br>  <br>  <br>  
+            <p style="font-size: 20px;text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shop smarter with Switcart seamless shop. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experience and lightning-fast deliveries. 
+           <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Experience seamless shopping at its!</p>
+            
+            <div class="photo">
+                <img src="jo1.jpg">
+            </div>
+            
+        </div>
+        <hr>
+        <p style="font-style: 'Ga Maamli', sans-serif; font-size: 90px; text-align: center;">&nbsp;&nbsp;&nbsp;Long Tops</p>
+        <div class="product">
+            
+           
+            <img src="f1.png">
+            <img src="f2.png">
+            <img src="f3.png">
+
+            <img src="l5.jpg">
+            <img src="l6.jpg">
+       
+        </div>
+        <hr>
+       
+        <p style="font-style: 'Ga Maamli', sans-serif; font-size: 90px; text-align: center;">&nbsp;&nbsp;&nbsp;Product Details</p>
+        <div class="text">
+            <p><b>Style Code:</b> ARK 1125 RANI GOWN</p>
+            <p><b>Occasion:</b> Party & Festive</p>
+            <p><b>Neck:</b> Round Neck</p>
+            <p><b>Sleeve:</b> 3/4 Sleeve</p>
+            <p><b>Length:</b> 52 inch</p>
+            <p><b>Bust Size:</b> 42 inch</p>
+            <p><b>Fabric Care:</b> Gentle Machine Care</p>
+            <p><b>Fabric:</b> Cotton Rayon</p>
+            <p><b>Type:</b> Anarkali</p>
+            <p><b>Sleeve Style:</b> Regular Sleeve</p>
+            <p><b>Stitching Type:</b> Stitched</p>
+            <p><b>Sales Package:</b> 1 KURTA</p>
+            <p><b>Pattern:</b> Floral Print</p>
+            <p><b>Color:</b> Pink</p>
+            <p><b>Belt Included:</b> No</p>
+            <p><b>Other Details:</b> Trendy Gown Frock Styles: Explore a wide range of trendy and fashionable gown frock designs that cater to your unique taste. Party-Ready Elegance: Our gowns for women are tailored to perfection, ensuring you make a lasting impression at any party. Comfortable and Stylish: Enjoy the perfect blend of comfort and style with our long gowns designed for women who appreciate both. Gown Length Full Length Elevate your style quotient with Arkavya's stunning women's gowns. Discover the perfect gown frock for every occasion in our exclusive collection. Whether you're attending a glamorous party or a formal event, our long gowns for women are designed to make you stand out. Arkavya brings you the latest in women's fashion, combining quality and affordability to create a delightful shopping experience. Shop our exquisite gown collection today and make a statement at your next event.</p>
+        </div>
+    </div>
+    <script>
+        const signInBtn = document.getElementById('signInBtn');
+        const loginBox = document.getElementById('loginBox');
+
+        signInBtn.addEventListener('click', function() {
+            if (loginBox.style.display === 'none' || loginBox.style.display === '') {
+                loginBox.style.display = 'block';
+            } else {
+                loginBox.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
